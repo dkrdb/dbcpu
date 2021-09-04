@@ -6,5 +6,7 @@ read_excel = 'C:\DBA\Python\estudos\/arquivos\/cpu_usage.xlsx'
 
 df = pd.read_excel(read_excel)
 
-print(df)
+dataframe = df.plot(kind='line')
+
+plt.show()
 
