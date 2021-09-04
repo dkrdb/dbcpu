@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 excel_file1 = 'C:\DBA\Python\estudos\/arquivos\/cpu_usage.xlsx'
 
-df = pd.read_excel(excel_file1, sheet_name='cpu',usecols='A:E')
+df = pd.read_excel(excel_file1, sheet_name='cpu_all',usecols='A:E')
 
 pivot = df.groupby(["DB_NAME","INSTANCE_NUMBER","SNAP_TIME"]).mean()
 
