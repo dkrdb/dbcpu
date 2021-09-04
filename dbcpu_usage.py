@@ -8,9 +8,9 @@ df = pd.read_excel(excel_file1, sheet_name='cpu',usecols='A:E')
 
 pivot = df.groupby(["DB_NAME","INSTANCE_NUMBER","SNAP_TIME"]).mean()
 
-print(pivot)
+#print(pivot)
 
-#dataframe = df.plot(kind='line')
+plot_cpu_usage = pivot.plot(kind='line')
 
-#plt.show()
+plt.show()
 
