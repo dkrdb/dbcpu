@@ -2,11 +2,15 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-read_excel = 'C:\DBA\Python\estudos\/arquivos\/cpu_usage.xlsx'
+excel_file1 = 'C:\DBA\Python\estudos\/arquivos\/cpu_usage.xlsx'
 
-df = pd.read_excel(read_excel)
+df = pd.read_excel(excel_file1, sheet_name='cpu',usecols='A:E')
 
-dataframe = df.plot(kind='line')
+pivot = df.groupby(["DB_NAME","INSTANCE_NUMBER","SNAP_TIME"]).mean()
 
-plt.show()
+print(pivot)
+
+#dataframe = df.plot(kind='line')
+
+#plt.show()
 
