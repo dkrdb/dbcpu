@@ -1,16 +1,10 @@
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 
-file_name = 'C:\DBA\Python\estudos\/arquivos\/binary.csv'
+read_excel = 'C:\DBA\Python\estudos\/arquivos\/cpu_usage.xlsx'
 
-df = pd.read_csv(file_name)
+df = pd.read_excel(read_excel)
 
 print(df)
-
-file2 = 'C:\DBA\Python\estudos\/arquivos\salarios.csv'
-
-df2 = pd.read_csv(file2)
-
-df2.head()
-print(df2)
-
 
