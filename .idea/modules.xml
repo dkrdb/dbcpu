@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/dbcpu.iml" filepath="$PROJECT_DIR$/.idea/dbcpu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../graficos/.idea/graficos.iml" filepath="$PROJECT_DIR$/../graficos/.idea/graficos.iml" />
     </modules>
   </component>
 </project>
